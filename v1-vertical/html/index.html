@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Welcome to Foundation</title>
+  
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+</head>
+
+<body>
+
+<div class="row">
+	<div class="three columns logo">
+		<span class="vline"></span>
+		<span class="hline"></span>
+		<h1 class="logo">nspiro</h1>	 
+	</div>
+	<div class="nine columns">
+		<ul class="nav top-nav text-right">
+			<li><a href="#">portfolio</a></li>
+			<li><a href="#">blog</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row">
+	<div class="three columns nav" role="navigation">
+		<span class="vline"></span>
+		<nav>
+			<ul class="main-nav nav vertical">				
+				<li class="active">
+					<a href="#">
+						<span class="hline"></span>
+						<div class="media">
+							<div class="img">								
+								<img src="images/branding.png">
+							</div>
+							<div class="txt">
+								<div class="nav-title">branding</div>
+								<div class="nav-subtitle">web, print, mobile</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hline"></span>
+						<div class="media">
+							<div class="img">
+								<img src="images/coding.png">
+							</div>
+							<div class="txt">
+								<div class="nav-title">coding</div>
+								<div class="nav-subtitle">php, c++, java, asp, jquery</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hline"></span>
+						<div class="media">
+							<div class="img">
+								<img src="images/managing.png">
+							</div>
+							<div class="txt">
+								<div class="nav-title">managing</div>
+								<div class="nav-subtitle">servers, domains</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div class="eight columns offset-by-one fullimg" role="content">
+		<ul class="nav categories">
+			<li class="active"><a href="#">web</a></li>
+			<li><a href="#">print</a></li>
+			<li><a href="#">mobile</a></li>
+		</ul>
+		<ul class="block-grid two-up mobile-one-up" id="box-grid">
+			<li> <!-- portfolio item starts -->
+				<div class="box">
+					<img src="images/portfolio/thumb.jpg">
+						<div class="info">
+							<h1 class="title h2">Lorem ipsum</h1>							
+						</div>
+					
+				</div>
+				<div class="overlay">
+						<span class="rb-close">close</span>
+						<div class="six columns work-big">
+							<img src="images/portfolio/work-big.jpg">
+						</div>
+						<div class="six columns half txt">
+							<div class="title huge">Lorem ipsum</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula imperdiet arcu non accumsan. Vestibulum suscipit scelerisque tristique. Proin cursus venenatis lobortis. Sed mollis mauris ut nulla viverra in elementum ante convallis. Donec blandit vehicula elit vitae varius. Suspendisse tristique, elit sit amet tempor posuere, quam lorem porttitor diam, sit amet cursus quam nisl sit amet augue. Donec rhoncus hendrerit semper. Suspendisse neque ipsum, imperdiet non vestibulum vel, cursus non mauris. Curabitur id massa dolor. Phasellus gravida, quam in eleifend hendrerit, arcu augue viverra diam, ac viverra lectus purus eu elit.</p>
+
+							<p>Sed semper diam id orci laoreet sed gravida tellus egestas. Duis cursus felis ut odio laoreet commodo. Mauris tempus lacus eget lacus ullamcorper quis blandit dolor scelerisque. Nulla id enim quis risus venenatis iaculis. Vestibulum volutpat, ipsum nec vehicula eleifend, lectus enim interdum dui, id molestie nisi nisl sollicitudin felis. Duis sed nibh sit amet magna venenatis consectetur id sit amet ante. Mauris massa tortor, posuere sed luctus at, tincidunt id neque. Vivamus arcu lorem, pretium quis gravida non, adipiscing vitae ipsum. Integer tristique porta dui vitae convallis. Quisque erat odio, lacinia id mollis sit amet, tincidunt in est. Vestibulum accumsan, metus congue volutpat adipiscing, neque enim sodales nisl, ac vulputate diam massa ac risus. Quisque bibendum mollis arcu et egestas.</p>
+						</div>
+						<div class="six columns half thumbs">
+							<ul class="block-grid two-up">
+								<li>
+									<div class="box">
+										<img src="images/portfolio/thumb.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<img src="images/portfolio/thumb.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<img src="images/portfolio/thumb.jpg">
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<img src="images/portfolio/thumb.jpg">
+									</div>
+								</li>
+							</ul>
+						</div>	
+				</div>
+			</li> <!-- portfolio item ends -->
+			
+			
+			
+		</div>
+	</div>
+</div>
+
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>  
+<script src="javascripts/boxgrid.js"></script>
+<script>
+	$(function() {
+		Boxgrid.init();	
+	});
+</script>
+  
+</body>
+</html>
